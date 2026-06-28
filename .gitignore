@@ -1,0 +1,63 @@
+# Python cache/bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temp
+*.log
+*.tmp
+*.bak
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Build/test cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+api/recolecta.db
+
+# Model artifacts and large generated files
+**/artefactos/
+*.joblib
+
+# Potentially sensitive payloads/reports
+payload_*.json
+tmp_payload*.json
+entrada_reporte*.json
+
+# Datasets (avoid pushing sensitive/large data)
+data/*.csv
+!data/.gitkeep
