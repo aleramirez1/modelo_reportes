@@ -1,0 +1,165 @@
+{
+  "resumen_general": {
+    "filas": 1000,
+    "columnas": 18,
+    "clusters_unicos": 2,
+    "anomalias": 100,
+    "pct_anomalias": 10.0,
+    "riesgo_bajo": 898,
+    "riesgo_medio": 61,
+    "riesgo_alto": 41
+  },
+  "metricas_kmeans": {
+    "mejor_k": 2,
+    "mejor_silhouette": 0.7457566639352002,
+    "resultados": [
+      [
+        2,
+        0.7457566639352002,
+        13427.723213857891
+      ],
+      [
+        3,
+        0.3696670483804744,
+        10691.488153858762
+      ],
+      [
+        4,
+        0.37523994921555315,
+        8274.756896498411
+      ],
+      [
+        5,
+        0.3821671171159485,
+        6958.795035180092
+      ],
+      [
+        6,
+        0.3861099707767158,
+        6222.404244379699
+      ],
+      [
+        7,
+        0.3485088117831813,
+        5502.656597722779
+      ],
+      [
+        8,
+        0.3291537716420477,
+        4926.208743462347
+      ],
+      [
+        9,
+        0.3327351172604074,
+        4343.440173598948
+      ]
+    ],
+    "columnas_modelo": [
+      "groserias",
+      "porcentaje_groserias",
+      "palabras_repetidas",
+      "caracteres_especiales",
+      "caracteres_especiales_repitidos",
+      "contiene_url",
+      "palabras_claves",
+      "palabras"
+    ],
+    "pesos_modelo": [
+      3.0,
+      3.0,
+      1.5,
+      0.3,
+      0.3,
+      2.0,
+      2.0,
+      1.0
+    ]
+  },
+  "metricas_isolation_forest": {
+    "contamination": 0.1,
+    "q90_score_norm": 0.41183077930783496,
+    "q97_score_norm": 0.8213995323384118,
+    "columnas_modelo": [
+      "groserias",
+      "porcentaje_groserias",
+      "palabras_repetidas",
+      "caracteres_especiales",
+      "caracteres_especiales_repitidos",
+      "contiene_url",
+      "palabras_claves",
+      "palabras"
+    ],
+    "pesos_modelo": [
+      3.0,
+      3.0,
+      1.5,
+      0.3,
+      0.3,
+      2.0,
+      2.0,
+      1.0
+    ],
+    "anomalias": 100,
+    "pct_anomalias": 10.0
+  },
+  "riesgo_meta": {
+    "p90_distancia": 4.289810766421873,
+    "p97_distancia": 9.602208537874171,
+    "columnas_modelo": [
+      "groserias",
+      "porcentaje_groserias",
+      "palabras_repetidas",
+      "caracteres_especiales",
+      "caracteres_especiales_repitidos",
+      "contiene_url",
+      "palabras_claves",
+      "palabras"
+    ],
+    "pesos_modelo": [
+      3.0,
+      3.0,
+      1.5,
+      0.3,
+      0.3,
+      2.0,
+      2.0,
+      1.0
+    ]
+  },
+  "resumen_clusters": [
+    {
+      "cluster": 0,
+      "cantidad_reportes": 917,
+      "distancia_promedio": 2.464,
+      "distancia_maxima": 10.7784,
+      "anomalias": 17
+    },
+    {
+      "cluster": 1,
+      "cantidad_reportes": 83,
+      "distancia_promedio": 8.5807,
+      "distancia_maxima": 16.8686,
+      "anomalias": 83
+    }
+  ],
+  "resumen_riesgo": [
+    {
+      "nivel_riesgo_final": "alto",
+      "cantidad_reportes": 41,
+      "distancia_promedio": 10.4292,
+      "anomalias": 41
+    },
+    {
+      "nivel_riesgo_final": "bajo",
+      "cantidad_reportes": 898,
+      "distancia_promedio": 2.3549,
+      "anomalias": 0
+    },
+    {
+      "nivel_riesgo_final": "medio",
+      "cantidad_reportes": 61,
+      "distancia_promedio": 7.0386,
+      "anomalias": 59
+    }
+  ]
+}

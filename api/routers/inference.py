@@ -40,7 +40,7 @@ def infer(request: InferenceCreate, db: Session = Depends(get_db)):
         result = service.infer(request)
         created = create_inference(db, service.to_model(result))
         return created
-    except Exception as exc:  # pragma: no cover - defensive API layer
+    except Exception as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
 
 

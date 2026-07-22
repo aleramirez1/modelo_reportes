@@ -1,0 +1,2 @@
+seccion,filas,columnas,clusters_unicos,anomalias,pct_anomalias,riesgo_bajo,riesgo_medio,riesgo_alto
+general,1000,18,2,100,10.0,898,61,41

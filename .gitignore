@@ -1,4 +1,4 @@
-# Python cache/bytecode
+﻿# Python cache/bytecode
 __pycache__/
 *.py[cod]
 *.pyo
@@ -43,21 +43,7 @@ Thumbs.db
 .coverage
 htmlcov/
 
-# Local databases
-*.db
-*.sqlite
-*.sqlite3
-api/recolecta.db
-
-# Model artifacts and large generated files
-**/artefactos/
-*.joblib
-
 # Potentially sensitive payloads/reports
 payload_*.json
 tmp_payload*.json
 entrada_reporte*.json
-
-# Datasets (avoid pushing sensitive/large data)
-data/*.csv
-!data/.gitkeep

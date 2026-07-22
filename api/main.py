@@ -1,11 +1,12 @@
 from __future__ import annotations
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.openapi.utils import get_openapi
 
 from api.core.config import APP_DESCRIPTION, APP_TITLE, APP_VERSION
 from api.db.session import Base, engine
-from api.models import inference as inference_model  # noqa: F401
+from api.models import inference as inference_model
 from api.routers.inference import router as inference_router
 
 
@@ -36,6 +37,14 @@ app = FastAPI(
     servers=[
         {"url": "http://127.0.0.1:8000", "description": "Servidor local"},
     ],
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
